@@ -47,6 +47,19 @@ ip netns exec h2 ifconfig h2-0 10.0.1.2 netmask 255.255.255.0 up
 ip netns exec h2 ifconfig lo up
 ip netns exec h3 ifconfig h3-0 10.0.1.3 netmask 255.255.255.0 up
 ip netns exec h3 ifconfig lo up
+ip netns exec h4 ifconfig h4-0 10.0.1.4 netmask 255.255.255.0 up
+ip netns exec h4 ifconfig lo up
+ip netns exec h5 ifconfig h5-0 10.0.1.5 netmask 255.255.255.0 up
+ip netns exec h5 ifconfig lo up
+ip netns exec h6 ifconfig h6-0 10.0.1.6 netmask 255.255.255.0 up
+ip netns exec h6 ifconfig lo up
+ip netns exec h7 ifconfig h7-0 10.0.1.7 netmask 255.255.255.0 up
+ip netns exec h7 ifconfig lo up
+ip netns exec h8 ifconfig h8-0 10.0.1.8 netmask 255.255.255.0 up
+ip netns exec h8 ifconfig lo up 
+
+
+# para cada roteador, executar um codigo de dar echo no /etc/proc/
 
 # Cria ponte transparente
 brctl addbr br0
